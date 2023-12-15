@@ -77,3 +77,5 @@ app.Run();
 
 /*dotnet ef database update --project ./Persistencia/ --startup-project ./API/
  */
+
+// dotnet ef dbcontext scaffold "server=localhost;user=root;password=campus2024;database=producion" Pomelo.EntityFrameworkCore.MySql --context ProductionContext --context-dir Data --output-dir Entities
