@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace API.Entities;
+namespace Domain.Entities;
 
 public partial class Factura
 {
@@ -13,5 +13,5 @@ public partial class Factura
 
     public virtual Cliente? IdClienteNavigation { get; set; }
 
-    public virtual ICollection<Productosventum> Productosventa { get; set; } = new List<Productosventum>();
+    public virtual ICollection<Productosventa> Productosventa { get; set; } = new List<Productosventa>();
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace API.Entities;
+namespace Domain.Entities;
 
 public partial class Producto
 {
@@ -17,7 +17,7 @@ public partial class Producto
 
     public int Stock { get; set; }
 
-    public virtual Categorium? IdCategoriaNavigation { get; set; }
+    public virtual Categoria? IdCategoriaNavigation { get; set; }
 
-    public virtual ICollection<Productosventum> Productosventa { get; set; } = new List<Productosventum>();
+    public virtual ICollection<Productosventa> Productosventa { get; set; } = new List<Productosventa>();
 }

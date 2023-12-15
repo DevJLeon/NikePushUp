@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace API.Entities;
+namespace Domain.Entities;
 
-public partial class Categorium
+public partial class Categoria
 {
     public string Id { get; set; } = null!;
 
