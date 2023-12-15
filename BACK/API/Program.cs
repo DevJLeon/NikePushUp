@@ -75,7 +75,6 @@ app.MapControllers();
 
 app.Run();
 
-/*dotnet ef database update --project ./Persistencia/ --startup-project ./API/
- */
-
+//dotnet ef database update --project ./Persistencia/ --startup-project ./API/
+//dotnet ef migrations add InitialCreate --project .\Persistence\ --startup-project ./API/ --output-dir ./Data/Migrations
 // dotnet ef dbcontext scaffold "server=localhost;user=root;password=campus2024;database=producion" Pomelo.EntityFrameworkCore.MySql --context ProductionContext --context-dir Data --output-dir Entities
